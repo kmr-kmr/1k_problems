@@ -1,0 +1,5 @@
+The missing number in integer array having numbers from 1 to n.
+
+Example:
+  inputArray = {1, 2, 3, 4, 5, 6, 8, 9}
+  output = 7
