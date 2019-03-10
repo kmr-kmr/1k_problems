@@ -1,7 +1,7 @@
 /*
   Simple solution
 
-  Step-1: Find the sum (s) of all the values in array[]
+  Step-1: Find the product of all the values in array[]
   Step-2: Replace every arra[i] with s/arra[i] 
 */
 
