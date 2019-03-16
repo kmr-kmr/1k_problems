@@ -151,7 +151,6 @@ void postOrderWithoutRecursion(node* givenNode) {
             if (curr->right) s.push(curr->right);
             curr = curr->left;
         }
-
         curr = s.top();
         s.pop();
 
