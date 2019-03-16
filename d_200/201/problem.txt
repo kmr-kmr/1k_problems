@@ -1,0 +1,5 @@
+Construction of a binary tree.
+
+1. Insert
+2. Delete
+3. Traverse
