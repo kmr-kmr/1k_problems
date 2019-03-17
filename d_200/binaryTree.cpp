@@ -143,19 +143,21 @@ void postOrderWithoutRecursion(node* givenNode) {
     node* curr;
     stack<node*> s;
     curr = givenNode;
-
-    while (curr != NULL || s.empty() != false) {
-
+    while (curr != NULL || s.empty() == false) {
         while (curr != NULL) {
+            if (curr->right != NULL) {
+                s.push(curr->right);
+            }
             s.push(curr);
-            if (curr->right) s.push(curr->right);
             curr = curr->left;
         }
         curr = s.top();
         s.pop();
 
-        node* temp = s.top();
-        if (curr->right != NULL && curr->right == temp) {
+        node* temp = NULL;
+
+        if (!s.empty()) temp = s.top();
+        if (temp != NULL && curr->right != NULL && curr->right == temp) {
             s.pop();
             s.push(curr);
             curr = curr->right;
@@ -165,6 +167,7 @@ void postOrderWithoutRecursion(node* givenNode) {
         }
     }
 }
+
 
 void postOrder(node* givenNode) {
     if (givenNode == NULL) return;
