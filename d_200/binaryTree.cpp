@@ -12,6 +12,33 @@ node* newNode(int data) {
 }
 
 
+void insertNode(node* temp, int key) {
+    /* Inserting in level order */
+    if (temp == NULL) return;
+
+    queue<node*> q;
+    q.push(temp);
+
+    node* curr;
+    while(!q.empty()) {
+        curr = q.front();
+        q.pop();
+
+        if (!curr->left) {
+            curr->left = newNode(key);
+            break;
+        } else {
+            q.push(curr->left);
+        }
+        if (!curr->right) {
+            curr->right = newNode(key);
+            break;
+        } else {
+            q.push(curr->right);
+        }
+    }
+}
+
 int heightWithoutRecursion(node* givenNode) {
 
     if(givenNode == NULL) return 0;

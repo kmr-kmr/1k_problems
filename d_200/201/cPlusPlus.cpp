@@ -4,32 +4,32 @@
 using namespace std;
 
 
-void insertNode(node* temp, int key) {
-    /* Inserting in level order */
-    if (temp == NULL) return;
+// void insertNode(node* temp, int key) {
+//     /* Inserting in level order */
+//     if (temp == NULL) return;
 
-    queue<node*> q;
-    q.push(temp);
+//     queue<node*> q;
+//     q.push(temp);
 
-    node* curr;
-    while(!q.empty()) {
-        curr = q.front();
-        q.pop();
+//     node* curr;
+//     while(!q.empty()) {
+//         curr = q.front();
+//         q.pop();
 
-        if (!curr->left) {
-            curr->left = newNode(key);
-            break;
-        } else {
-            q.push(curr->left);
-        }
-        if (!curr->right) {
-            curr->right = newNode(key);
-            break;
-        } else {
-            q.push(curr->right);
-        }
-    }
-}
+//         if (!curr->left) {
+//             curr->left = newNode(key);
+//             break;
+//         } else {
+//             q.push(curr->left);
+//         }
+//         if (!curr->right) {
+//             curr->right = newNode(key);
+//             break;
+//         } else {
+//             q.push(curr->right);
+//         }
+//     }
+// }
 
 void deleteDeepestNode(node* root, node* deepest) {
     node* temp;

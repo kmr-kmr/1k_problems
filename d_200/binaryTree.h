@@ -15,4 +15,5 @@ void preOrder(node*);
 void preOrderWithoutRecursion(node*);
 void postOrder(node*);
 void postOrderWithoutRecursion(node*);
+void insertNode(node*, int);
 node* sampleTree();
