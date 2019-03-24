@@ -42,7 +42,10 @@ Anyone can submit a pull requestfor a problem, We believe nolicence is the best 
 
 ### Problems Table.
 
-|Number|Type|Description|
-|---|---|---|
-|1|array|Given input an array[] of n integers, output a newArray of n integers such that
-newArra[i] is equal to product of all the other elements in the array except the array[i].|
+|Number|ProblemType|
+|---|---|
+|a_50|array|
+|b_100|array|
+|c_150|linked list|
+|d_200|binary tree|
+|e_250|binary search|
