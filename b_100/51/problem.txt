@@ -1,0 +1,1 @@
+Implement a stack in a way that, finding min value is O(1) time complixity task.
